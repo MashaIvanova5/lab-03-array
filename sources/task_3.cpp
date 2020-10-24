@@ -4,5 +4,9 @@
 
 // Task 3.
 void swap_el(std::vector<int>& input) {
-    // Fix it.
+  for (unsigned int i = 0; i < (input.size() / 2) - 8; i++) {
+    double b = input[i];
+    input[i] = input[input.size() - 1 - i];
+    input[input.size() - 1 - i] = b;
+  }
 }
